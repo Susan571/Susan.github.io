@@ -30,7 +30,7 @@
         }
 
         h2, h3 {
-            color: black;  /* Set headers and subheaders to black */
+            color: black;
         }
 
         p, ul {
@@ -46,12 +46,25 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: black;  /* Set navigation links to black */
+            color: black;
             font-size: 18px;
         }
 
         nav a:hover {
             color: #3a8f3f;
+        }
+
+        .cv-button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cv-button:hover {
+            background-color: #4CAF50;
+            color: white;
         }
 
         .profile-photo {
@@ -79,7 +92,8 @@
         <a href="#introduction">Introduction</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
-        <a href="cv.html">CV</a>
+        <!-- CV Button Linked to CV PDF -->
+        <a href="assets/Xinyue_Zeng_CV.pdf" class="cv-button" target="_blank">Download CV</a>
     </nav>
 
     <!-- Introduction Section -->
@@ -87,8 +101,8 @@
         <h2>Introduction</h2>
         <img src="assets/images/profile.jpg" alt="Xinyue's Profile Photo" class="profile-photo">
         <div class="introduction-text">
-            <p>Hello! I'm Xinyue Zeng, currently pursuing my PhD in Computer Science at Virginia Tech under supervision of prof.Dawei Zhou. With a strong background in statistics and artificial intelligence, I am passionate about leveraging data science and AI to solve real-world problems, particularly in the fields of biostatistics and healthcare.</p>
-            <p>Throughout my academic journey, I have gained experience in developing deep learning models for protein structure prediction, image recognition, and statistical modeling for RNA-seq data. Proficient in R, Python, SAS, Matlab, and Java, I enjoy working in collaborative environments where innovation thrives. Welcome to my homepage!</p>
+            <p>Hello! I'm Xinyue Zeng, currently pursuing my PhD in Computer Science at Virginia Tech under the supervision of Prof. Dawei Zhou. I am passionate about leveraging data science and AI to solve real-world problems, particularly in biostatistics and healthcare.</p>
+            <p>Throughout my academic journey, I have gained experience in developing deep learning models for protein structure prediction, image recognition, and RNA-seq data analysis. Proficient in R, Python, SAS, Matlab, and Java, I enjoy working in collaborative environments where innovation thrives. Welcome to my homepage!</p>
         </div>
     </section>
 
