@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xinyue's Homepage</title>
+    <title>Xinyue Zeng - Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-            color: black;  /* Set all text to black */
         }
 
         header {
@@ -29,13 +28,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h2, h3 {
-            color: black;
-        }
-
-        p, ul {
-            font-size: 16px;
-            line-height: 1.6;
+        h2 {
+            color: #333;
         }
 
         nav {
@@ -46,7 +40,7 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: black;
+            color: #4CAF50;
             font-size: 18px;
         }
 
@@ -54,37 +48,75 @@
             color: #3a8f3f;
         }
 
-        .cv-button {
-            padding: 10px 20px;
-            background-color: black;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
+        /* Introduction Section */
+        #introduction {
+            text-align: center;
+            padding: 50px;
         }
 
-        .cv-button:hover {
-            background-color: #4CAF50;
-            color: white;
+        #introduction h2 {
+            font-size: 32px;
+            color: black;
         }
 
-        .profile-photo {
-            max-width: 200px;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto;
+        .introduction-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .introduction-text {
+            max-width: 500px;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .introduction-image {
+            max-width: 200px;
+        }
+
+        .introduction-image img {
+            border-radius: 50%;
+            max-width: 100%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CV Section */
+        #cv {
             text-align: center;
+            padding: 50px;
+        }
+
+        #cv h2 {
+            font-size: 32px;
+            color: black;
+        }
+
+        #cv a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #cv a:hover {
+            background-color: #45a049;
         }
 
     </style>
 </head>
 <body>
 
+
     <!-- Header -->
     <header>
-        Xinyue's Personal Homepage
+        Xinyue Zeng's Personal Homepage
     </header>
 
     <!-- Navigation Menu -->
@@ -92,15 +124,14 @@
         <a href="#introduction">Introduction</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
-        <!-- CV Button Linked to CV PDF -->
-        <a href="assets/Xinyue_Zeng_CV.pdf" class="cv-button" target="_blank">Download CV</a>
+        <a href="#cv">CV</a>
     </nav>
 
     <!-- Introduction Section -->
-    <section id="introduction" style="text-align: center; padding: 50px;">
+    <section id="introduction" style="text-align: left; padding: 50px;">
         <h2 style="font-size: 32px; color: black;">Introduction</h2>
-        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
-            <div style="max-width: 500px; margin-right: 20px; text-align: left;">
+        <div style="display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;">
+            <div style="max-width: 500px; margin-right: 40px;">
                 <p style="font-size: 18px; line-height: 1.6;">
                     Hello! I'm <strong>Xinyue Zeng</strong>, currently pursuing my PhD in Computer Science at Virginia Tech under the supervision of Prof. Dawei Zhou. I am passionate about leveraging data science and AI to solve real-world problems, particularly in biostatistics and healthcare.
                 </p>
@@ -108,11 +139,11 @@
                     Throughout my academic journey, I have gained experience in developing deep learning models for protein structure prediction, image recognition, and RNA-seq data analysis. Proficient in R, Python, SAS, Matlab, and Java, I enjoy working in collaborative environments where innovation thrives. Welcome to my homepage!
                 </p>
             </div>
-            <div style="max-width: 200px;">
+            <div style="max-width: 300px;">
                 <img src="assets/images/profile.jpg" alt="Xinyue's Profile Photo" style="border-radius: 50%; max-width: 100%; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);">
             </div>
         </div>
-    </section>    
+    </section>        
 
     <!-- Education Section -->
     <section id="education">
@@ -189,6 +220,12 @@
         <ul>
             <li>Built and updated a financial database using web crawlers, developing a long-short system trading strategy using Python based on financial indicators.</li>
         </ul>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv">
+        <h2>CV</h2>
+        <p><a href="assets/CV_Xinyue Zeng.pdf" target="_blank">CV</a></p>
     </section>
 
 </body>
